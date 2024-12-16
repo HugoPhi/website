@@ -118,6 +118,7 @@ body {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #f9d342;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
 }
 
 .about-box p,
