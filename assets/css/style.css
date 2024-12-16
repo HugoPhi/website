@@ -42,22 +42,22 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(1);  /* 初始状态，透明且缩小 */
+    transform: scale(1); /* 初始状态，透明且缩小 */
   }
   100% {
     opacity: 1;
-    transform: scale(1);  /* 最终状态，完全不透明且正常大小 */
+    transform: scale(1); /* 最终状态，完全不透明且正常大小 */
   }
 }
 
 @keyframes fadeInScale {
   0% {
     opacity: 0;
-    transform: scale(2);  /* 初始状态，透明且缩小 */
+    transform: scale(2); /* 初始状态，透明且缩小 */
   }
   100% {
     opacity: 1;
-    transform: scale(1);  /* 最终状态，完全不透明且正常大小 */
+    transform: scale(1); /* 最终状态，完全不透明且正常大小 */
   }
 }
 
@@ -175,6 +175,7 @@ h6 {
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
