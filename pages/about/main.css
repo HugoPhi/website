@@ -13,7 +13,9 @@ body {
   align-items: center;
   position: relative;
   font-family: "Manjari";
+  animation: fadeIn 1s ease-out forwards;
 }
+
 
 .navmenu a i {
   color: #ffffff !important;

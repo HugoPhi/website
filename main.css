@@ -32,6 +32,7 @@
 .hero .container {
   position: relative;
   z-index: 3;
+  animation: fadeInScale 0.4s ease-out forwards;
 }
 
 .hero h1 {
