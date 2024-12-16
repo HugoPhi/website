@@ -1,146 +1,105 @@
 <!doctype html>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
   <head>
-    <title>Yunming Hu's Personal Website</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yunming Hu's Personal Website</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="assets/img/banner.png" rel="icon" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
   </head>
-  <body class="is-preload">
-    <div id="wrapper">
-      <div id="bg"></div>
-      <div id="overlay"></div>
-      <div id="main">
-        <!-- Header -->
-        <header id="header">
-          <h1>🔥Yunming Hu</h1>
-          <p>
-            <!-- Github Badge -->
-            <a href="https://github.com/HugoPhi" class="title-link">
-              <img
-                src="https://img.shields.io/badge/-Github-333?style=flat&logo=Github&logoColor=white"
-                alt="Github"
-              />
-            </a>
 
-            <!-- GitHub Stars Badge -->
-            <a href="https://github.com/HugoPhi" class="title-link">
-              <img
-                src="https://img.shields.io/github/stars/HugoPhi?style=social"
-                alt="GitHub Stars"
-              />
-            </a>
-
-            <!-- Kaggle Badge -->
-            <a href="https://www.kaggle.com/yunminghu" class="title-link">
-              <img
-                src="https://img.shields.io/badge/Kaggle-Comptition-yellow?style=flat&logo=kaggle&logoColor=white"
-                alt="Kaggle"
-              />
-            </a>
-
-            <!-- Blog Badge -->
-            <a href="https://HugoPhi.github.io" class="title-link">
-              <img
-                src="https://img.shields.io/badge/Blog-My%20Blog-green?style=flat&logo=postman&logoColor=white"
-                alt="My Blog"
-              />
-            </a>
-            <br />
-            Majored in CS &nbsp;&bull;&nbsp; ML,DL &nbsp;&bull;&nbsp; Neovim
-          </p>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  href="https://hugophi.github.io/"
-                  class="icon brands fa-wpexplorer"
-                  ><span class="label">Blog</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-orcid"
-                  ><span class="label">Facebook</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.kaggle.com/yunminghu"
-                  class="icon brands fa-kaggle"
-                  ><span class="label">Kaggle</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/HugoPhi"
-                  class="icon brands fa-github"
-                  ><span class="label">Github</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="hugonelson07@outlook.com"
-                  class="icon solid fa-envelope"
-                  ><span class="label">Email</span></a
-                >
-              </li>
-            </ul>
-          </nav>
-        </header>
-
-        <!-- 添加版权声明 -->
-        <footer id="footer">
-          <p align="center">
-            © <span id="current-year"></span>
-            <!-- GitHub 图标链接 -->
-            <a
-              href="https://github.com/HugoPhi"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Yunming Hu</a
+  <body class="index-page">
+    <!-- 旁边的按钮导航 -->
+    <header
+      id="header"
+      class="header d-flex flex-column justify-content-center"
+    >
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i><span>Home</span></a
             >
-            <!-- 这里使用GitHub的官方SVG图标 -->
-            <svg
-              class="github-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
+          </li>
+          <li>
+            <a href="about.html"
+              ><i class="bi bi-person navicon"></i><span>About</span></a
             >
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.68 7.68 0 012.0-.27c.68 0 1.36.09 2.0.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-              />
-            </svg>
-            . All rights reserved.
-          </p>
-        </footer>
+          </li>
+          <!-- <li> -->
+          <!--   <a href="resume.html" -->
+          <!--     ><i class="bi bi-file-earmark-text navicon"></i -->
+          <!--     ><span>Resume</span></a -->
+          <!--   > -->
+          <!-- </li> -->
+          <li>
+            <a href="portfolio.html"
+              ><i class="bi bi-images navicon"></i><span>Portfolio</span></a
+            >
+          </li>
+          <li>
+            <a href="services.html"
+              ><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="bi bi-envelope navicon"></i><span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+      <img src="assets/img/2.png" alt="" />
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 text-center">
+            <h1>Yunming Hu 🔥</h1>
+            <p>
+              I'm
+              <span
+                class="typed"
+                data-typed-items="Vimer, Designer, Developer, DataScience Engineer"
+              ></span>
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://github.com/HugoPhi" ><i class="fa-brands fa-github"></i ></a>
+              <a href="https://kaggle.com/yunminghu" ><i class="fas fa-award"></i ></a>
+              <a href="https://scholar.google.com" ><i class="fas fa-graduation-cap"></i ></a>
+              <a href="https://hugophi.github.io" ><i class="fas fa-pencil"></i ></a>
+              <a href="https://dotfyle.com/HugoPhi"><i class="fa-solid fa-n"></i> </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Vendor JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <!-- Typing Effect -->
     <script>
-      window.onload = function () {
-        document.body.classList.remove("is-preload");
-      };
-      window.ontouchmove = function () {
-        return false;
-      };
-      window.onorientationchange = function () {
-        document.body.scrollTop = 0;
-      };
-    </script>
-    <script>
-      // 设置当前年份
-      document.addEventListener("DOMContentLoaded", () => {
-        const currentYear = new Date().getFullYear();
-        document.getElementById("current-year").textContent = currentYear;
+      var typed = new Typed(".typed", {
+        strings: ["Vimer", "Designer", "Developer", "DataScience Engineer"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1000,
+        loop: true,
       });
     </script>
   </body>
