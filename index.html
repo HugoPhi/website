@@ -6,7 +6,8 @@
     <title>Yunming Hu's Personal Website</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" />
     <link href="assets/img/banner.png" rel="icon" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -18,7 +19,6 @@
   </head>
 
   <body class="index-page">
-    <!-- 旁边的按钮导航 -->
     <header
       id="header"
       class="header d-flex flex-column justify-content-center"
@@ -32,7 +32,7 @@
             >
           </li>
           <li>
-            <a href="about.html"
+            <a href="pages/about/index.html"
               ><i class="bi bi-person navicon"></i><span>About</span></a
             >
           </li>
@@ -64,24 +64,59 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
       <img src="assets/img/2.png" alt="" />
-
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9 text-center">
+            <div class="hero-typed">
+              <p>
+                I'm
+                <span
+                  class="typed"
+                  data-typed-items="Vimer, Designer, Developer, Student, fan of ML&DL"
+                ></span>
+              </p>
+            </div>
             <h1>Yunming Hu 🔥</h1>
-            <p>
-              I'm
-              <span
-                class="typed"
-                data-typed-items="Vimer, Designer, Developer, DataScience Engineer"
-              ></span>
-            </p>
+            <div class="badges mt-3">
+              <a href="https://github.com/HugoPhi">
+                <img
+                  src="https://img.shields.io/badge/-Github-333?style=flat&logo=Github&logoColor=white"
+                  alt="Github"
+                />
+              </a>
+              <a href="https://github.com/HugoPhi">
+                <img
+                  src="https://img.shields.io/github/stars/HugoPhi?style=social"
+                  alt="GitHub 总星数"
+                />
+              </a>
+              <a href="https://www.kaggle.com/yunminghu">
+                <img
+                  src="https://img.shields.io/badge/Kaggle-Comptition-blue?style=flat&logo=kaggle&logoColor=white"
+                  alt="Kaggle Competition Badge"
+                />
+              </a>
+              <img
+                src="https://views.whatilearened.today/views/github/HugoPhi/HugoPhi.svg?cache=remove"
+                alt="ViewCount"
+              />
+            </div>
             <div class="social-links mt-3">
-              <a href="https://github.com/HugoPhi" ><i class="fa-brands fa-github"></i ></a>
-              <a href="https://kaggle.com/yunminghu" ><i class="fas fa-award"></i ></a>
-              <a href="https://scholar.google.com" ><i class="fas fa-graduation-cap"></i ></a>
-              <a href="https://hugophi.github.io" ><i class="fas fa-pencil"></i ></a>
-              <a href="https://dotfyle.com/HugoPhi"><i class="fa-solid fa-n"></i> </a>
+              <a href="https://github.com/HugoPhi"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://kaggle.com/yunminghu"
+                ><i class="fas fa-award"></i
+              ></a>
+              <a href="https://scholar.google.com"
+                ><i class="fas fa-graduation-cap"></i
+              ></a>
+              <a href="https://hugophi.github.io"
+                ><i class="fas fa-pencil"></i
+              ></a>
+              <a href="https://dotfyle.com/HugoPhi"
+                ><i class="fa-solid fa-n"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -95,7 +130,7 @@
     <!-- Typing Effect -->
     <script>
       var typed = new Typed(".typed", {
-        strings: ["Vimer", "Designer", "Developer", "DataScience Engineer"],
+        strings: ["Vimer", "Designer", "Developer", "Student", "fan of ML&DL"],
         typeSpeed: 60,
         backSpeed: 40,
         backDelay: 1000,
