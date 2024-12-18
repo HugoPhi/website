@@ -1,104 +1,131 @@
 /* General Style */
 .card {
-    position: relative;
-    overflow: hidden;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  /* Use flexbox to ensure the content grows properly */
+  height: 100%;
+  /* Make sure the height stretches to fit its content */
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-    width: 100%;
-    height: auto;
-    transition: opacity 0.3s ease;
+  width: 100%;
+  height: 200px;
+  /* Set fixed height to ensure all images have the same height */
+  object-fit: cover;
+  /* Ensure image fills the container without distortion */
+  transition: opacity 0.3s ease;
 }
 
 .card-body {
-    padding: 20px;
+  padding: 20px;
+  flex-grow: 1;
+  /* Allow the body to take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Ensure content is aligned at the top */
 }
 
-.btn-project-link {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 1.5rem;
-    color: #fff;
-    background-color: #000;
-    border-radius: 50%;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  /* Add spacing between title and description */
 }
 
-.btn-project-link i {
-    font-size: 1.2rem;
-    line-height: 1;
+.card-text {
+  flex-grow: 1;
+  /* Allow the text to take up the remaining space */
+  font-size: 1rem;
+  margin-bottom: 10px;
+  /* Space at the bottom */
 }
 
-.btn-project-link:hover {
-    transform: scale(1.1);
-    background-color: #333;
+/* Hover effect for image zoom */
+.project-item img {
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.1);
 }
 
 /* Category Button Styles */
 .category-btn {
-    margin: 0 10px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .category-btn:hover {
-    background-color: #007bff;
-    color: #fff;
+  background-color: #007bff;
+  color: #fff;
 }
 
 /* Hide Categories Initially */
 .project-item {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .project-item.show {
-    display: block;
-    opacity: 1;
-}
-
-.project-item img {
-    transition: transform 0.3s ease;
-}
-
-.project-item:hover img {
-    transform: scale(1.1);
-}
-
-.project-categories {
-    margin-bottom: 50px;
-}
-
-.project-gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: block;
+  opacity: 1;
 }
 
 /* Animate when the page loads */
 .project-item.show {
-    animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Container for Portfolio Items */
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* Add space between items */
+  justify-content: center;
+}
+
+.project-item {
+  width: calc(33.333% - 20px);
+  /* Make each item take up 1/3rd of the row width */
+  margin-bottom: 20px;
+  /* Add space at the bottom */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .project-item {
+    width: calc(50% - 20px);
+    /* On smaller screens, show 2 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-item {
+    width: 100%;
+    /* On very small screens, show 1 item per row */
+  }
 }
