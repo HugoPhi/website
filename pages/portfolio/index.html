@@ -1,49 +1,189 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yunming Hu's Personal Website</title>
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../assets/css/bootstrap-icons.css" rel="stylesheet" />
-    <link href="../../assets/css/style.css" rel="stylesheet" />
-    <link href="main.css" rel="stylesheet" />
-    <link href="../../assets/img/banner.png" rel="icon" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="index-page">
-    <header
-      id="header"
-      class="header d-flex flex-column justify-content-center"
-    >
-      <i class="header-toggle d-xl-none bi bi-list"></i>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li> <a href="../../index.html" ><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-          <li> <a href="../about/index.html"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-          <li> <a href="../portfolio/index.html" class="active"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-          <li> <a href="../service/index.html" ><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-          <li> <a href="../contact/index.html" ><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yunming Hu's Personal Website</title>
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/style.css" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" />
+  <link href="../../assets/img/banner.png" rel="icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <main class="main">
-      <div class="page-title">
-        <div class="container">
-          <h1>Portfolio Details</h1>
+<body class="index-page">
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li> <a href="../../index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li> <a href="../about/index.html"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li> <a href="../portfolio/index.html" class="active"><i
+              class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li> <a href="../service/index.html"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li> <a href="../contact/index.html"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="main portfolio-detail">
+    <div class="page-title">
+      <div class="container">
+        <h1>Portfolio Details</h1>
+        <p class="lead">Explore the details of our most recent projects. Learn more about the process, tools, and
+          creative ideas behind the scenes.</p>
+      </div>
+    </div>
+
+    <!-- Project Categories Section -->
+    <section class="project-categories py-5">
+      <div class="container text-center">
+        <h2 class="h3 mb-4">Explore By Category</h2>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-outline-primary category-btn" data-category="all">All</button>
+          <button type="button" class="btn btn-outline-primary category-btn" data-category="web-design">Web
+            Design</button>
+          <button type="button" class="btn btn-outline-primary category-btn" data-category="branding">Branding</button>
+          <button type="button" class="btn btn-outline-primary category-btn"
+            data-category="marketing">Marketing</button>
         </div>
       </div>
-    </main>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="../../assets/js/script.js"></script>
-  </body>
+    <!-- Portfolio Gallery Section -->
+    <section class="portfolio-gallery py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Web Design Projects (2 new items) -->
+          <div class="col-md-4 project-item web-design">
+            <div class="card project-card">
+              <img src="assets/1.png" alt="Web Design Project 1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Web Design Project 1</h5>
+                <p class="card-text">A brief overview of the web design project. Click to view more details.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item web-design">
+            <div class="card project-card">
+              <img src="assets/2.png" alt="Web Design Project 2" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Web Design Project 2</h5>
+                <p class="card-text">A brief overview of another web design project. Click to view more details.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Branding Projects (3 new items) -->
+          <div class="col-md-4 project-item branding">
+            <div class="card project-card">
+              <img src="assets/3.png" alt="Branding Project 1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Branding Project 1</h5>
+                <p class="card-text">A short description of the branding project. Click to explore more.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item branding">
+            <div class="card project-card">
+              <img src="assets/1.png" alt="Branding Project 2" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Branding Project 2</h5>
+                <p class="card-text">A description of another branding project. Click to learn more.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item branding">
+            <div class="card project-card">
+              <img src="assets/wallhaven-4d1m6g_2560x1080.png" alt="Branding Project 3" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Branding Project 3</h5>
+                <p class="card-text">A short description of the third branding project. Click to view more details.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Marketing Projects (5 new items) -->
+          <div class="col-md-4 project-item marketing">
+            <div class="card project-card">
+              <img src="assets/Wednsday.png" alt="Marketing Project 1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Marketing Project 1</h5>
+                <p class="card-text">A description of the marketing project. Click to learn more.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item marketing">
+            <div class="card project-card">
+              <img src="assets/wallhaven-qzqk1r_1920x1200.png" alt="Marketing Project 2" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Marketing Project 2</h5>
+                <p class="card-text">A description of the second marketing project. Click to explore more.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item marketing">
+            <div class="card project-card">
+              <img src="assets/warty-final-ubuntu.png" alt="Marketing Project 3" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Marketing Project 3</h5>
+                <p class="card-text">A short description of the third marketing project. Click to view more details.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item marketing">
+            <div class="card project-card">
+              <img src="assets/wallhaven-qzqk1r_1920x1200.png" alt="Marketing Project 4" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Marketing Project 4</h5>
+                <p class="card-text">A description of the fourth marketing project. Click to learn more.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-item marketing">
+            <div class="card project-card">
+              <img src="assets/wallhaven-o5xvpl_2560x1080.png" alt="Marketing Project 5" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Marketing Project 5</h5>
+                <p class="card-text">A description of the fifth marketing project. Click to view more details.</p>
+                <a href="#" class="btn btn-project-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script src="../../assets/js/script.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
 </html>

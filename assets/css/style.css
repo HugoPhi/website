@@ -20,15 +20,23 @@
   --nav-font: "Poppins", sans-serif;
 
   /* Global Colors */
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0563bb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #272829;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #45505b;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0563bb;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 
-  --nav-color: #45505b; /* The default color of the main navmenu links */
-  --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #45505b;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #0563bb;
+  /* Applied to main navmenu links when they are hovered over or active */
 }
 
 /* Smooth scroll */
@@ -42,22 +50,28 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(1); /* 初始状态，透明且缩小 */
+    transform: scale(1);
+    /* 初始状态，透明且缩小 */
   }
+
   100% {
     opacity: 1;
-    transform: scale(1); /* 最终状态，完全不透明且正常大小 */
+    transform: scale(1);
+    /* 最终状态，完全不透明且正常大小 */
   }
 }
 
 @keyframes fadeInScale {
   0% {
     opacity: 0;
-    transform: scale(2); /* 初始状态，透明且缩小 */
+    transform: scale(2);
+    /* 初始状态，透明且缩小 */
   }
+
   100% {
     opacity: 1;
-    transform: scale(1); /* 最终状态，完全不透明且正常大小 */
+    transform: scale(1);
+    /* 最终状态，完全不透明且正常大小 */
   }
 }
 
@@ -85,11 +99,11 @@
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li + li {
+.page-title .breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li + li::before {
+.page-title .breadcrumbs ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -142,8 +156,7 @@ h6 {
 @media (max-width: 1199px) {
   .header {
     background-color: var(--background-color);
-    border-right: 1px solid
-      color-mix(in srgb, var(--default-color), transparent 90%);
+    border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     width: 300px;
     left: -100%;
   }
@@ -220,6 +233,7 @@ h6 {
 }
 
 @media (min-width: 992px) {
+
   .navmenu a,
   .navmenu a:focus {
     max-width: 56px;
@@ -234,19 +248,19 @@ h6 {
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus,
-.navmenu li:hover > a {
+.navmenu li:hover>a {
   color: var(--contrast-color);
   background: var(--nav-hover-color);
 }
 
 .navmenu a:hover,
-.navmenu li:hover > a {
+.navmenu li:hover>a {
   max-width: 100%;
   color: var(--contrast-color);
 }
 
 .navmenu a:hover span,
-.navmenu li:hover > a span {
+.navmenu li:hover>a span {
   display: block;
 }
 
