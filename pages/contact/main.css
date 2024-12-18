@@ -1,4 +1,3 @@
-/* Contact Section */
 .contact-form-section {
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -77,12 +76,16 @@
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* 添加过渡效果 */
 }
 
 .card img {
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+  /* 为图片添加过渡效果 */
 }
 
 .card-body {
@@ -92,6 +95,24 @@
 .card h5 {
   font-size: 1.2rem;
   color: #333;
+  transition: color 0.3s ease;
+  /* 文字颜色变化 */
+}
+
+/* Hover effect */
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  /* 增加阴影 */
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  /* 放大图片 */
+}
+
+.card:hover h5 {
+  color: #007bff;
+  /* 改变标题颜色 */
 }
 
 /* Dots Navigation */
@@ -113,4 +134,18 @@
 
 .dot.active {
   background-color: #333;
+}
+
+/* 通用图标样式 */
+.github-icon {
+  width: 18px;
+  height: 18px;
+  fill: #333;
+  transition:
+    fill 0.3s,
+    color 0.3s;
+}
+
+.github-link:hover .github-icon {
+  fill: #4078c0;
 }
