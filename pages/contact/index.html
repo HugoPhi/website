@@ -1,49 +1,114 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yunming Hu's Personal Website</title>
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../assets/css/bootstrap-icons.css" rel="stylesheet" />
-    <link href="../../assets/css/style.css" rel="stylesheet" />
-    <link href="main.css" rel="stylesheet" />
-    <link href="../../assets/img/banner.png" rel="icon" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="index-page">
-    <header
-      id="header"
-      class="header d-flex flex-column justify-content-center"
-    >
-      <i class="header-toggle d-xl-none bi bi-list"></i>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li> <a href="../../index.html" ><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-          <li> <a href="../about/index.html"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-          <li> <a href="../portfolio/index.html"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-          <li> <a href="../service/index.html"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-          <li> <a href="../contact/index.html" class="active"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yunming Hu's Personal Website</title>
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/style.css" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" />
+  <link href="../../assets/img/banner.png" rel="icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <main class="main">
-      <div class="page-title">
-        <div class="container">
-          <h1>Contact</h1>
+<body class="index-page">
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li> <a href="../../index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li> <a href="../about/index.html"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li> <a href="../portfolio/index.html"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li> <a href="../contact/index.html" class="active"><i
+              class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="page-title">
+      <div class="container">
+        <h1>Contact</h1>
+      </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section py-5 bg-light">
+      <div class="container">
+        <div class="carousel-wrapper">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://example1.com" class="card">
+                <img src="assets/1.png" alt="Card Image 1" />
+                <div class="card-body">
+                  <h5>Card 1</h5>
+                    <p>this is card 1</p>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://example2.com" class="card">
+                <img src="assets/2.png" alt="Card Image 2" />
+                <div class="card-body">
+                  <h5>Card 2</h5>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://example3.com" class="card">
+                <img src="assets/3.png" alt="Card Image 3" />
+                <div class="card-body">
+                  <h5>Card 3</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </div>
-    </main>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="../../assets/js/script.js"></script>
-  </body>
+    <!-- Social Links Section -->
+    <section class="social-links-section py-5 bg-light">
+      <div class="container text-center">
+        <h3>Connect with Me</h3>
+        <div class="social-links mt-4">
+          <a href="https://www.linkedin.com" class="social-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com" class="social-link" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://twitter.com" class="social-link" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="mailto:yunminghu@example.com" class="social-link"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section py-5">
+      <div class="container text-center">
+        <h3>Find Me Here</h3>
+        <div class="map-container mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.2777820803876!2d106.29002931140957!3d29.595610139592736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36ecc683f9e5c615%3A0x86b0da957001dd9a!2sChongqing%20University%20Huxi%20Campus%20%EF%BC%88West%20Gate%201%EF%BC%89!5e0!3m2!1sen!2suk!4v1734525361728!5m2!1sen!2suk"
+            width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script src="../../assets/js/script.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
