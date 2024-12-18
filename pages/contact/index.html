@@ -60,6 +60,7 @@
                 <img src="assets/2.png" alt="Card Image 2" />
                 <div class="card-body">
                   <h5>Card 2</h5>
+                  <p>this is card 1</p>
                 </div>
               </a>
             </div>
@@ -68,13 +69,23 @@
                 <img src="assets/3.png" alt="Card Image 3" />
                 <div class="card-body">
                   <h5>Card 3</h5>
+                  <p>this is card 1</p>
                 </div>
               </a>
             </div>
           </div>
+
+
+          <!-- 左右箭头 -->
+          <div class="carousel-prev" onclick="goToPreviousItem()">
+            <i class="bi bi-chevron-left"></i>
+          </div>
+          <div class="carousel-next" onclick="goToNextItem()">
+            <i class="bi bi-chevron-right"></i>
+          </div>
         </div>
         <div class="carousel-dots">
-          <span class="dot active"></span>
+          <span class="dot"></span>
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
@@ -107,7 +118,7 @@
           <a href="mailto:yunminghu@example.com" class="social-link"><i class="bi bi-envelope"></i></a>
         </div>
       </div>
-      <br/>
+      <br />
       <p align="center">
         © <span id="current-year"></span>
         <a href="https://github.com/HugoPhi" target="_blank" rel="noopener noreferrer" class="github-link">Yunming
