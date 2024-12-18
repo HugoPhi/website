@@ -149,15 +149,14 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  color: #fff;
   /* 白色箭头图标 */
-  background-color: #333;
+  color: #fff;
   /* 黑色背景 */
-  padding: 10px;
+  background-color: #333;
   /* 箭头按钮的内边距 */
+  padding: 10px;
   border-radius: 50%;
-  height: 55px;
-  /* 圆形 */
+  height: 52px;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 10;
