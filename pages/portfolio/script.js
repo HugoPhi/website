@@ -1,22 +1,18 @@
-
 document.addEventListener('DOMContentLoaded', function () {
-    // 获取所有类别按钮
-    const categoryButtons = document.querySelectorAll('.category-btn');
+    const categorySelect = document.getElementById('category-select');
     const projectItems = document.querySelectorAll('.project-item');
 
-    // 为每个按钮添加点击事件
-    categoryButtons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            const category = button.getAttribute('data-category');
+    // 监听下拉选择的变化
+    categorySelect.addEventListener('change', function () {
+        const category = categorySelect.value;
 
-            // 显示所有项目或根据类别显示项目
-            projectItems.forEach(function (item) {
-                if (category === 'all' || item.classList.contains(category)) {
-                    item.classList.add('show');
-                } else {
-                    item.classList.remove('show');
-                }
-            });
+        // 显示所有项目或根据类别显示项目
+        projectItems.forEach(function (item) {
+            if (category === 'all' || item.classList.contains(category)) {
+                item.classList.add('show');
+            } else {
+                item.classList.remove('show');
+            }
         });
     });
 
