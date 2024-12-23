@@ -1,6 +1,6 @@
 # My Personal Website
 
-This website is writen in HTML + CSS + JS.
+This website is writen in HTML + CSS + JS from scratch.
 Deployed by [Vercel](https://vercel.com)
 
 ```cpp

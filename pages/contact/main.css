@@ -142,44 +142,52 @@
   background-color: #333;
 }
 
-/* 左右箭头 */
+
 .carousel-prev,
 .carousel-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
-  /* 白色箭头图标 */
-  color: #fff;
-  /* 黑色背景 */
-  background-color: #333;
-  /* 箭头按钮的内边距 */
-  padding: 10px;
-  border-radius: 50%;
+  width: 52px;
   height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 10;
-  display: flex;
-  justify-content: center;
 }
 
-/* 左箭头 */
 .carousel-prev {
   left: 15px;
 }
 
-/* 右箭头 */
 .carousel-next {
   right: 15px;
 }
 
-/* 显示箭头的动画 */
+.carousel-prev svg,
+.carousel-next svg {
+  fill: white;
+  width: 36px;
+  height: 36px;
+}
+
+
 .carousel-wrapper:hover .carousel-prev,
 .carousel-wrapper:hover .carousel-next {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
-  /* 增加动画效果，放大箭头 */
+  /* 放大效果 */
+}
+
+.carousel-prev:hover svg,
+.carousel-next:hover svg {
+  fill: #007bff;
+  /* 悬停时改变SVG图标颜色 */
 }
 
 /* 默认隐藏箭头 */
@@ -188,15 +196,6 @@
   opacity: 0;
   transform: translateY(-50%) scale(0.8);
   /* 初始时箭头不可见并缩小 */
-}
-
-/* Arrow hover color change */
-.carousel-prev:hover,
-.carousel-next:hover {
-  background-color: #007bff;
-  /* 鼠标悬停时的背景颜色 */
-  color: #fff;
-  /* 鼠标悬停时的箭头颜色保持白色 */
 }
 
 /* 通用图标样式 */
