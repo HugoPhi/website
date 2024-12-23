@@ -36,7 +36,8 @@
     <div class="page-title">
       <div class="container">
         <h1>Portfolio Details</h1>
-        <p class="lead">Explore the details of our most recent projects. Learn more about the process, tools, and
+        <p class="lead" style="font-family: 'Manjari';">Explore the details of our most recent projects. Learn more
+          about the process, tools, and
           creative ideas behind the scenes.</p>
       </div>
     </div>
@@ -45,14 +46,21 @@
     <section class="project-categories py-5">
       <div class="container text-center">
         <h2 class="h3 mb-4">Explore By Category</h2>
-        <div class="btn-group" role="group">
-          <button type="button" class="btn btn-outline-primary category-btn" data-category="all">All</button>
-          <button type="button" class="btn btn-outline-primary category-btn" data-category="web">Web</button>
-          <button type="button" class="btn btn-outline-primary category-btn" data-category="fwk">Frameworks</button>
-          <button type="button" class="btn btn-outline-primary category-btn" data-category="tool">Tools</button>
-          <button type="button" class="btn btn-outline-primary category-btn" data-category="csd">CSystem Design</button>
-          <button type="button" class="btn btn-outline-primary category-btn" data-category="cus">Customization</button>
-        </div>
+        <br />
+
+        <!-- 下拉选择器 -->
+        <center>
+          <div class="dropdown">
+            <select id="category-select" class="form-select" aria-label="Select Category">
+              <option value="all">All</option>
+              <option value="web">Web</option>
+              <option value="fwk">Frameworks</option>
+              <option value="tool">Tools</option>
+              <option value="csd">CSystem Design</option>
+              <option value="cus">Customization</option>
+            </select>
+          </div>
+        </center>
       </div>
     </section>
 
@@ -188,7 +196,8 @@
               <img src="assets/csd1.png" alt="CSystems Project 1" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">RISC-V CPU</h5>
-                <p class="card-text">Sim-core realized in verilog based on RISCV-I32 isa that can simulate the behaviour of
+                <p class="card-text">Sim-core realized in verilog based on RISCV-I32 isa that can simulate the behaviour
+                  of
                   CPU, and run riscv assembly. </p>
               </div>
             </a>

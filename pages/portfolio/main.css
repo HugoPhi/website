@@ -131,6 +131,32 @@
 @media (max-width: 480px) {
   .project-item {
     width: 100%;
-    /* On very small screens, show 1 item per row */
   }
+}
+
+
+/* beautify the selector */
+.form-select {
+  width: 300px;
+  padding: 10px;
+  font-family: 'Manjari', sans-serif;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-select:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.form-select:hover {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-select option {
+  padding: 10px;
 }
