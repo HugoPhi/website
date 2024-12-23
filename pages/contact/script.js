@@ -77,7 +77,17 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".carousel-wrapper").addEventListener("touchstart", handleTouchStart);
     document.querySelector(".carousel-wrapper").addEventListener("touchend", handleTouchEnd);
 
-    updateCarousel();
+    // Add hover stop and resume autoplay
+    carouselItems.forEach(item => {
+        item.addEventListener("mouseenter", function () {
+            stopAutoPlay();  // 停止自动播放
+        });
 
+        item.addEventListener("mouseleave", function () {
+            resetAutoPlay();  // 恢复自动播放
+        });
+    });
+
+    updateCarousel();
     startAutoPlay();
 });
