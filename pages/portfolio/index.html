@@ -54,9 +54,9 @@
             <select id="category-select" class="form-select" aria-label="Select Category">
               <option value="all">All</option>
               <option value="web">Web</option>
-              <option value="fwk">Frameworks</option>
+              <option value="mls">ML & DLs</option>
               <option value="tool">Tools</option>
-              <option value="csd">CSystem Design</option>
+              <option value="csd">System Design</option>
               <option value="cus">Dotfiles</option>
               <option value="ff">✨ Just For Fun 🦖</option>
             </select>
@@ -114,50 +114,70 @@
             </a>
           </div>
 
-          <!-- Frame Work Projects -->
-          <div class="col-md-4 project-item fwk">
-            <a href="https://pypi.org/project/opcal/" class="card project-card">
-              <img src="assets/fwk1.jpg" alt="Frame Work Project 1" class="card-img-top">
+          <!-- MLs & DLs -->
+          <div class="col-md-4 project-item mls">
+            <a href="https://github.com/HugoPhi/baseline_sensor_har.git" class="card project-card">
+              <img src="assets/mls1.png" alt="mls 1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Baseline for IMU based HAR.</h5>
+                <p class="card-text">Some baselines for ML/DL of HAR by torch.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 project-item mls">
+            <a href="https://github.com/HugoPhi/jaxdls.git" class="card project-card">
+              <img src="assets/mls2.png" alt="mls 2" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Jax DeepLearning</h5>
+                <p class="card-text">Classic DeepModels by Jax from scratch </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 project-item mls">
+            <a href="https://github.com/HugoPhi/minitorch.git" class="card project-card">
+              <img src="assets/mls3.svg" alt="mls 3" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Minitorch</h5>
+                <p class="card-text">A torch-like deeplearning framework by Jax.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 project-item mls">
+            <a href="https://github.com/HugoPhi/lrkit.git" class="card project-card">
+              <img src="assets/mls4.png" alt="mls 4" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Learning Kit</h5>
+                <p class="card-text">Frame work for testing multiple ml models. Provide <code>Numpy</code> &
+                  <code>Jax</code> version.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 project-item mls">
+            <a href="https://github.com/HugoPhi/deephar_reproduction.git" class="card project-card">
+              <img src="assets/mls5.png" alt="mls 5" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Reproduction for ResBiLSTM on HAR</h5>
+                <p class="card-text">Reproduction code for thesis "Deep Residual Bidir-LSTM for Human Activity
+                  Recognition Using Wearable Sensors" </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 project-item mls">
+            <a href="https://github.com/HugoPhi/opcal.git" class="card project-card">
+              <img src="assets/mls6.png" alt="mls 6" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Opcal</h5>
-                <p class="card-text">Python package for Numerical Calculation & Optimization. Install:
-                  <code>pip install opcal</code>.
-                </p>
+                <p class="card-text">Numberical Methods & Optimzation Algorithms</p>
               </div>
             </a>
           </div>
 
-          <div class="col-md-4 project-item fwk">
-            <a href="https://pypi.org/project/hym20220592/" class="card project-card">
-              <img src="assets/fwk2.jpg" alt="Frame Work Project 2" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">ml</h5>
-                <p class="card-text">Python package for basic Machine Learning algorithms. Install:
-                  <code>pip install hym20220592</code>.
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 project-item fwk">
-            <a href="https://github.com/HugoPhi/stl.rust" class="card project-card">
-              <img src="assets/fwk3.png" alt="Frame Work Project 3" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">stl.rust</h5>
-                <p class="card-text">Rust data structure lib for learning including test framework.</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 project-item fwk">
-            <a href="https://github.com/HugoPhi/quick-har" class="card project-card">
-              <img src="assets/fwk4.png" alt="Frame Work Project 4" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">quick-har</h5>
-                <p class="card-text">Training & testing framework for har.</p>
-              </div>
-            </a>
-          </div>
 
           <!-- tools  -->
           <div class="col-md-4 project-item tool">
@@ -265,6 +285,17 @@
               </div>
             </a>
           </div>
+
+          <div class="col-md-4 project-item ff">
+            <a href="" class="card project-card">
+              <img src="assets/ff2.png" alt="For Fun 1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Data Structures by Rust</h5>
+                <p class="card-text">a rust data structure lib for learning including test </p>
+              </div>
+            </a>
+          </div>
+
 
         </div>
       </div>
